@@ -1,0 +1,217 @@
+$palette-color : #14b9d6;
+$music-color : #e76049;
+$camera-color : #2eb398;
+$video-color : #90899c;
+$business-color : #5692b1;
+$airplane-color : #f9b704;
+$fashion-color : #dd1787;
+$plus-color : #e76049;
+$white-color : #fff;
+
+.header {
+  padding: 32px 30px;
+  background-color: #262626;
+}
+
+.row {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-weight: 400;
+    .cell {
+        margin-right: 30px;
+        &.large-auto {
+            margin-top: 30px;
+        }
+        h4, .h4 {
+            color: #313131;
+            font-family: "Montserrat";
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: -0.52px;
+        }
+        .text-details {
+            color: #626262;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: -0.28px;
+        }
+        .article_bg {
+            display: inline-block;
+            padding-left: 0px;
+            color: #9d9d9d;
+            margin-left: 5px;
+            font-family: "OpenSans-Semibold";
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -0.24px;
+        }
+        .icon {
+            margin-right: 2px;
+            color: #9d9d9d;
+            svg {
+                width: 13px;
+                height: 13px;
+                fill: currentColor;
+                vertical-align: baseline;
+            }
+        }
+        .info-wrapper {
+            margin-bottom: 30px;
+            padding: 28px;
+            border: 1px solid #ebebeb;
+            border-bottom: 5px solid #2eb398;
+            border-top: none;
+            &.bb-red {
+                border-bottom: 5px solid #e76049;
+            }
+            &.bb-grey {
+                border-bottom: 5px solid #90899c;
+            }
+            &.bb-blue {
+                border-bottom: 5px solid #5692b1;
+            }
+        }
+        .sidebar {
+            position: relative;
+            height: 100%;
+            width: 70px;
+            border-right: 1px solid #e7e7e7;
+            li {
+                position: relative;
+                margin-top: 50px;
+                height: 70px;
+                align-items: center;
+                margin: 0;
+                .text {
+                    display: none;
+                }
+                &:hover .text, &.active .text {
+                    display: inline;
+                    margin-left: 20px;
+                    color: $white-color;
+                    font-family: 'Montserrat-Bold';
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: -0.28px;
+                }
+                &:nth-of-type(1) {
+                    padding: 0;
+                    color: $palette-color;
+                    top: 26px;
+                    right: -40px;
+                    height: auto;
+                    svg {
+                        width: 20px;
+                        height: 15px;
+                    }
+                }
+                &:nth-of-type(2) {
+                    margin-top: 28px;
+                    color: $music-color;
+                    svg {
+                      width: 14px;
+                      height: 18px;
+                    }
+                }
+                &:nth-of-type(3) {
+                    color: $camera-color;
+                    svg {
+                        width: 20px;
+                        height: 17px;
+                    }
+                }
+                &:nth-of-type(4) {
+                    color: $video-color;
+                    svg {
+                      width: 20px;
+                      height: 14px;
+                    }
+                }
+                &:nth-of-type(5) {
+                    color: $white-color;
+                    background-color: $business-color;
+                    svg {
+                        width: 20px;
+                        height: 18px;
+                    }
+                }
+                &:nth-of-type(6) {
+                    color: $airplane-color;
+                    svg {
+                        width: 20px;
+                        height: 18px;
+                    }
+                }
+                &:nth-of-type(7) {
+                    color: $white-color;
+                    background-color: $fashion-color;
+                    svg {
+                      width: 17px;
+                      height: 17px;
+                    }
+                }
+                &:nth-of-type(8) {
+                    color: $plus-color;
+                    svg {
+                      width: 22px;
+                      height: 22px;
+                    }
+                }
+                svg {
+                    fill: currentColor;
+                    vertical-align: bottom;
+                }
+                &:hover, &.active {
+                    display: flex;
+                    align-items: center;
+                    color: $white-color;
+                    cursor: pointer;
+                    width: 158px;
+                    justify-content: left;
+                    padding-left: 28px;
+                }
+                &:hover {
+                    &:nth-of-type(1) {
+                        background-color: transparent;
+                        color: $palette-color;
+                        cursor: default;
+                    }
+                    &:nth-of-type(2) {
+                        background-color: $music-color;
+                    }
+                    &:nth-of-type(3) {
+                        background-color: $camera-color;
+                    }
+                    &:nth-of-type(4) {
+                        background-color: $video-color;
+                    }
+                    &:nth-of-type(5) {
+                        background-color: $business-color;
+                    }
+                    &:nth-of-type(6) {
+                        background-color: $airplane-color;
+                    }
+                    &:nth-of-type(7) {
+                        background-color: $fashion-color;
+                    }
+                    &:nth-of-type(8) {
+                        background-color: $plus-color;
+                    }
+                }
+                &.active:nth-of-type(5) {
+                    background-color: $business-color;
+                }
+                &.active:nth-of-type(7) {
+                    background-color: $fashion-color;
+                }
+            }
+        }
+    }
+}
